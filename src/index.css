@@ -1,13 +1,213 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #14471d;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+a {
+  font-weight: 500;
+  color: wheat;
+  text-decoration: inherit;
+  
+}
+
+a:hover {
+  color: #9dff89;
+}
+
+body {
+  margin: 0;
+  margin-top: 1rem;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 0.5;
+  font-family: 'Abril Fatface', serif;
+}
+
+h2 {
+  font-family: monospace;
+  color:#28913e;
+  background-color: wheat;
+  width: 15rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #377444;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+ul{
+  list-style-type:circle;
+}
+
+.navLinks {
+  list-style-type:none;
+  /* gap: 3rem; */
+  /* border-radius: 0.5rem; */
+  background-color: wheat;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+}
+
+.navLinks a {
+  float: left;
+  display: block;
+  color:#28913e;
+  font-family: monospace;
+  padding: 0.25rem;
+  padding-right:2rem;
+  font-size: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 1rem;
+  text-align: justify;
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: monospace;
+  width: 50rem;
+}
+
+input {
+  font-size: 1.1rem;
+}
+
+.bigBox {
+  height: 10rem;
+  font-size: 1.1rem;
+}
+
+.grid img {
+max-width: 40rem;
+}
+
+.grid {
+  display: flex;
+  /* width: 80%; */
+  justify-content:space-evenly;
+  gap: 5rem;
+  margin-top: 3rem;
+  text-align: justify;
+}
+
+.about {
+  width: 60rem;
+  text-align: justify;
+}
+
+.pageHeader {
+  color:#28913e;
+  /* text-align: justify; */
+  border-radius: 0.5rem;
+}
+
+h3 {
+  color:#dfe6a8
+}
+
+.about h1 {
+  background-color: #56cf70;
+  width: 15rem;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.navHeader h1 {
+  font-family: 'Abril Fatface', monospace;
+}
+
+.future {
+  text-align: justify;
+  width: 60rem;
+}
+
+.website img {
+  width: 50rem;
+  padding: 1rem;
+}
+
+.website {
+  text-align: justify;
+  width: 60rem;
+}
+
+.footer {
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;  
+  gap: 2rem;
+  list-style-type:none;
+  font-size: 0.75rem;
+  padding-top: 1rem;
+}
+
+.footerTop {
+width: 50rem;
+text-align: center;
+margin-top: 2.5rem;
+color: #dfe6a8;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #a1c4a9;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  .grid {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2em;
+  }
 }
