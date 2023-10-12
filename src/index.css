@@ -81,7 +81,7 @@ ul{
   background-color: wheat;
   overflow: hidden;
   position: fixed;
-  max-width: 100%;
+  width: 100%;
   left: 0;
   top: 0;
   margin: 0;
