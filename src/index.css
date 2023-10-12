@@ -44,7 +44,7 @@ h2 {
   font-family: monospace;
   color:#28913e;
   background-color: wheat;
-  width: 15rem;
+  max-width: 15rem;
   padding: 0.7rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -81,7 +81,7 @@ ul{
   background-color: wheat;
   overflow: hidden;
   position: fixed;
-  width: 100%;
+  max-width: 100%;
   left: 0;
   top: 0;
   margin: 0;
@@ -105,7 +105,7 @@ form {
   font-size: 1.2rem;
   font-weight: bold;
   font-family: monospace;
-  width: 50rem;
+  max-width: 50rem;
 }
 
 input {
@@ -131,7 +131,7 @@ max-width: 40rem;
 }
 
 .about {
-  width: 60rem;
+  max-width: 60rem;
   text-align: justify;
 }
 
@@ -147,7 +147,7 @@ h3 {
 
 .about h1 {
   background-color: #56cf70;
-  width: 15rem;
+  max-width: 15rem;
   padding: 1.5rem;
   border-radius: 1rem;
   text-align: center;
@@ -161,17 +161,17 @@ h3 {
 
 .future {
   text-align: justify;
-  width: 60rem;
+  max-width: 60rem;
 }
 
 .website img {
-  width: 50rem;
+  max-width: 50rem;
   padding: 1rem;
 }
 
 .website {
   text-align: justify;
-  width: 60rem;
+  max-width: 60rem;
 }
 
 .footer {
@@ -185,23 +185,10 @@ h3 {
 }
 
 .footerTop {
-width: 50rem;
+max-width: 50rem;
 text-align: center;
 margin-top: 2.5rem;
 color: #dfe6a8;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #a1c4a9;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 @media screen and (max-width: 1370px) {
