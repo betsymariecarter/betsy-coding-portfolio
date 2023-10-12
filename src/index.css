@@ -189,7 +189,7 @@ color: #dfe6a8;
     flex-flow: column wrap;
     gap: 2em;
   }
-  .website img {
-    width: 100%;
+  img {
+    max-width: 100%;
   }
 }
