@@ -37,11 +37,11 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1;
-  font-family: 'Abril Fatface', serif;
+  font-family: 'Abril Fatface', Georgia;
 }
 
 h2 {
-  font-family: monospace;
+  font-family: 'Abril Fatface', Georgia;
   color:#28913e;
   background-color: wheat;
   max-width: 15rem;
@@ -76,8 +76,6 @@ ul{
 
 .navLinks {
   list-style-type:none;
-  /* gap: 3rem; */
-  /* border-radius: 0.5rem; */
   background-color: wheat;
   overflow: hidden;
   position: fixed;
@@ -91,7 +89,6 @@ ul{
   float: left;
   display: block;
   color:#28913e;
-  font-family: monospace;
   padding: 0.25rem;
   padding-right:2rem;
   font-size: 1.5rem;
@@ -104,7 +101,6 @@ form {
   text-align: justify;
   font-size: 1.2rem;
   font-weight: bold;
-  font-family: monospace;
   max-width: 50rem;
 }
 
@@ -155,10 +151,6 @@ h3 {
   justify-content: center;
 }
 
-.navHeader h1 {
-  font-family: 'Abril Fatface', monospace;
-}
-
 .future {
   text-align: justify;
   max-width: 60rem;
@@ -200,5 +192,4 @@ color: #dfe6a8;
   .website img {
     width: 100%;
   }
-  
 }
