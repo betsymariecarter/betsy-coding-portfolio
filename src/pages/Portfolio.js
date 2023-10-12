@@ -15,9 +15,9 @@ export default function Portfolio() {
         If you would like to learn more about planned features, please visit the{" "}
         <Link to="/future">Future Goals</Link> tab.
       </p>
-      {/* <a href="https://github.com/betsymariecarter/the-code-portfolio">
+      <a href="https://github.com/betsymariecarter/betsy-coding-portfolio">
         Portfolio Github
-      </a> */}
+      </a>
     </main>
   );
 }
