@@ -191,10 +191,13 @@ margin-top: 2.5rem;
 color: #dfe6a8;
 }
 
-@media screen and (max-width: 1370px) {
+@media screen and (max-width: 100rem) {
   .grid {
     display: flex;
     flex-flow: column wrap;
     gap: 2em;
+  }
+  .website img {
+    width: 100%;
   }
 }
