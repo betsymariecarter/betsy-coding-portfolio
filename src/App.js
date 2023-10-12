@@ -8,6 +8,7 @@ import ToDomagotchi from "./pages/ToDomagotchi";
 import Portfolio from "./pages/Portfolio";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
