@@ -30,15 +30,14 @@ export default function HopMart() {
           Hopmart Github
         </a>
         <h3>Screenshots</h3>
-        <p>
+        <p></p>
           {" "}
           <h4>Front Page</h4>
-          <img src="/HopMartPicture2.png" alt="image" />
+          <img src="/HopMartPicture2.png" />
           <h4>Products Gallery</h4>
-          <img src="/HopMartPicture1.png" alt="image" />
+          <img src="/HopMartPicture1.png"/>
           <h4>Cart</h4>
-          <img src="/HopMartPicture3.png" alt="image" />
-        </p>
+          <img src="/HopMartPicture3.png"/>
       </main>
     );
   }  
