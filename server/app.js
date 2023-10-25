@@ -6,7 +6,8 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(express.json())
 
-app.use('/api', require('./api'))
+app.use("/auth", require("./auth"));
+app.use('/api', require('./api'));
 
 app.get('/ping', function (req, res) {
  return res.send('pong');

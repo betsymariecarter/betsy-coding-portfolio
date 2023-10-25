@@ -12,7 +12,7 @@ export const fetchAllWebsites = createAsyncThunk("websites", async () => {
 })
 
 const initialState = {
-    websites: [],
+    websites: {},
 };
 
 export const allWebsitesSlice = createSlice({

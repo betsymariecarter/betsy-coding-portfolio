@@ -4,6 +4,8 @@ const router = require("express").Router();
 
 router.use('/website', require ('./website'))
 router.use('/contact', require ('./contact'))
+router.use('/blog', require('./blog'))
+router.use('/admin', require('./'))
 
 router.use((req, res, next) => {
   const error = new Error("Not Found");

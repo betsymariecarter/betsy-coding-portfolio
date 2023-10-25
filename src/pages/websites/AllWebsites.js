@@ -17,21 +17,29 @@ useEffect(() => {
 console.log(gallery?.title[1])
 
   return (
-    <div>
-      <h1>Elizabeth "Betsy" Carter's Portfolio</h1>
-
-      <h2>Projects Completed</h2>
+    <main className="main">
+      <p>
+        Specializes in Javascript (specifically React) and developing frontends.
+      </p>
+      <p>
+        Experience with leading stand-ups and excels at identifying realistic
+        goals to keep development running smoothly.
+      </p>
+      <p>Excels at time management and creating own schedule.</p>
+      <h2 className="pageHeader">Projects</h2>
       {gallery.map((website) => (
-        <section>
+        <div className="grid">
+          <section>
           <img src={website.imageUrl[0]}/>
-          <h3>{website.title}</h3>
+          <h3><Link to={`/website/${id}`}>{website.title}</Link></h3>
           <h4>{website.language}</h4>
           <h4>{website.credits}</h4>
           <p>{website.description}</p>
-          <a href={website.github}></a>
+          <a href={website.links[0]}>{website.linkName[0]}</a>
         </section>
+        </div>
       ))}
-    </div>
+    </main>
   );
 };
 
