@@ -4,6 +4,7 @@ import axios from "axios";
 export const fetchAllWebsites = createAsyncThunk("websites", async () => {
     try {
         const {data} = await axios.get('/api/website');
+        console.log(data)
         return data;
     }
     catch (err) {
@@ -29,5 +30,6 @@ export const allWebsitesSlice = createSlice({
 export const selectAllWebsites = (state) => {
     return state.websites;
 };
+
 
 export default allWebsitesSlice.reducer;

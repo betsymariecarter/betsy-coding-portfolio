@@ -6,12 +6,12 @@ const {
 //all websites view
 router.get("/", async (req, res, next) => {
   try {
-    const gallery = await Website.findAll({
+    const websites = await Website.findAll({
       include: {
         all: true,
       },
     });
-    res.json(gallery);
+    res.json(websites);
   } catch (err) {
     next(err);
   }

@@ -2,7 +2,8 @@
 
 const {
   db,
-  models: { Contact, Website },
+    Contact, 
+    Website,
 } = require("../server/db");
 
 /**
@@ -14,9 +15,9 @@ async function seed() {
   console.log("db synced!");
 
   // Creating Users
-  const contact = await Promise.all([
-    Contact.create({ name: "test", email: "123" }),
-    Contact.create({ name: "murphy", email: "123" }),
+  const contacts = await Promise.all([
+    Contact.create({ name: "test", email: "123@gmail.com" }),
+    Contact.create({ name: "murphy", email: "123@gmail.com" }),
   ]);
 
   const websites = await Promise.all([
@@ -104,18 +105,17 @@ async function seed() {
     }),
   ]);
 
-  console.log(`seeded ${users.length} users`);
   console.log(`seeded successfully`);
   return {
-    users: {
-      cody: users[0],
-      murphy: users[1],
+    contacts: {
+      cody: contacts[0],
+      murphy: contacts[1],
     },
     websites: {
       graceshopper: websites[0],
-      unblock: websites[1],
-      todo: websites[2],
-      portfolio: websites[3],
+      // unblock: websites[1],
+      todo: websites[1],
+      portfolio: websites[2],
     },
   };
 }

@@ -23,11 +23,7 @@ export const me = createAsyncThunk('auth/me', async () => {
       return {};
     }
   } catch (err) {
-    if (err.response.data) {
-      return thunkAPI.rejectWithValue(err.response.data);
-    } else {
-      return 'There was an issue with your request.';
-    }
+          return 'There was an issue with your request.';
   }
 });
 
@@ -38,7 +34,7 @@ export const authenticate = createAsyncThunk(
     thunkAPI
   ) => {
     try {
-        const res = await axios.post(`/auth/${method}`, { username, password });
+        const res = await axios.post(`/auth/login`, { username, password });
         window.localStorage.setItem(TOKEN, res.data.token);
         thunkAPI.dispatch(me());  
     } catch (err) {
