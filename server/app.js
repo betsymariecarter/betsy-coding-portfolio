@@ -6,7 +6,7 @@ app.use(express.static(path.join(__dirname, 'build')));
 
 app.use(express.json())
 
-app.use("/auth", require("./auth"));
+// app.use("/auth", require("./auth"));
 app.use('/api', require('./api'));
 
 app.get('/ping', function (req, res) {
