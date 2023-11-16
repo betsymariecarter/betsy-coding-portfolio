@@ -1,7 +1,5 @@
 const router = require("express").Router();
-const {
-  models: { Contact },
-} = require("../db");
+const { Contact } = require("../db");
 
 //all contacts view
 router.get("/", async (req, res, next) => {
@@ -32,7 +30,7 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
-router.post("/addNewContact", async (req, res) => {  
+router.post("/addNewContact", async (req, res) => {
   try {
     const newContact = await Contact.create(req.body);
     res.json(newContact);

@@ -119,9 +119,9 @@ max-width: 40rem;
 
 .grid {
   display: flex;
-  /* width: 80%; */
+  width: 80%;
   justify-content:space-evenly;
-  gap: 5rem;
+  gap: 5rem; 
   margin-top: 3rem;
   text-align: justify;
 }

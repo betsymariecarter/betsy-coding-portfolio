@@ -60,9 +60,9 @@ async function seed() {
     // }),
     Website.create({
       imageUrl: [
-        "/pictures/ToDoMagotchi1.png",
-        "/pictures/ToDoMagotchi2.png",
-        "/pictures/ToDoMagotchi3.png",
+        "/ToDoMagotchi1.png",
+        "/ToDoMagotchi2.png",
+        "/ToDoMagotchi3.png",
       ],
       title: `ToDoMagotchi`,
       links: [

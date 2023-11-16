@@ -1,7 +1,5 @@
 const router = require("express").Router();
-const {
-  models: { Website },
-} = require("../db");
+const { Website } = require("../db");
 
 //all websites view
 router.get("/", async (req, res, next) => {

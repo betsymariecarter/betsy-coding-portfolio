@@ -1,7 +1,5 @@
 const router = require("express").Router();
-const {
-  models: { Blog },
-} = require("../db");
+const { Blog } = require("../db");
 
 //blog gallery view
 router.get("/", async (req, res, next) => {
@@ -23,7 +21,7 @@ router.get("/:id", async (req, res, next) => {
     const blogPost = await Blog.findOne({
       where: { id: req.params.id },
       include: {
-        all:true,
+        all: true,
       },
     });
     res.json(blogPost);
@@ -32,13 +30,13 @@ router.get("/:id", async (req, res, next) => {
   }
 });
 
-router.post("/post", async (req, res) => {  
-    try {
-      const newPost = await Blog.create(req.body);
-      res.json(newPost);
-    } catch (error) {
-      console.error(error);
-    }
-  });
+router.post("/post", async (req, res) => {
+  try {
+    const newPost = await Blog.create(req.body);
+    res.json(newPost);
+  } catch (error) {
+    console.error(error);
+  }
+});
 
 module.exports = router;
